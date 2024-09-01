@@ -17,7 +17,7 @@ namespace Company.TopicProcessorFunc
 
         [Function(nameof(TopicProcessorFunc))]
         public async Task Run(
-            [ServiceBusTrigger("topicfiltersampletopic", "ColorBlueSize10Orders", Connection = "mcservicebusaz_SERVICEBUS")]
+            [ServiceBusTrigger("topicfiltersampletopic", "ColorRed", Connection = "mcservicebusaz_SERVICEBUS")]
             ServiceBusReceivedMessage message,
             ServiceBusMessageActions messageActions)
         {
